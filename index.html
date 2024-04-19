@@ -1,125 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostafa Abed alal - Flutter Developer</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #42a5f5;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-
-        h1, h2, h3 {
-            color: #42a5f5;
-        }
-
-        a {
-            color: #42a5f5;
-            text-decoration: none;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .project {
-            width: 48%;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muslim Soul App Activity Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+    .step {
+      margin-bottom: 20px;
+    }
+    .step p {
+      margin: 10px 0;
+    }
+    .step::before {
+      content: attr(data-step);
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border: 2px solid #000;
+      border-radius: 50%;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+  </style>
 </head>
-
 <body>
-
-    <header>
-        <h1>Mostafa Abed alal</h1>
-        <p>Flutter Developer</p>
-    </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>Hi, I'm Mostafa Abed alal, a passionate learner in Flutter development. Excited to explore the world of cross-platform mobile applications!</p>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul>
-           <li>Flutter</li>
-            <li>(learning)</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Flutter Learning App</h3>
-                <p>A simple app created while learning Flutter.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Flutter Portfolio</h3>
-                <p>My personal portfolio built using Flutter.</p>
-                <a href="#">View Project</a>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mostafa-abed-alal">linkedin.com/in/mostafa-abed-alal</a></p>
-        <p>GitHub: <a href="https://github.com/Ra23jedan99">github.com/Ra23jedan99</a></p>
-    </section>
-
-    <footer>
-        &copy; 2024 Mostafa Abed alal - Flutter Developer(learning)
-    </footer>
-
+  <div class="container">
+    <div class="step" data-step="1">
+      <p>User Launches App: The user opens the Muslim Soul app on their mobile device.</p>
+    </div>
+    <div class="step" data-step="2">
+      <p>Check Location Services: The app checks if location services are enabled on the user's device.</p>
+      <p>Yes: Proceed to step 3.</p>
+      <p>No: The app prompts the user to enable location services. User interaction is needed here (e.g., tapping a button to allow location access).</p>
+    </div>
+    <div class="step" data-step="3">
+      <p>Access User Location: If enabled, the app retrieves the user's current location (city and country).</p>
+    </div>
+    <div class="step" data-step="4">
+      <p>Prayer Time Calculation: The app uses the retrieved location and a built-in prayer time calculation algorithm to determine the prayer times for the user's specific location.</p>
+    </div>
+    <div class="step" data-step="5">
+      <p>Prayer Time Display: The app displays the calculated prayer times on the app's interface, typically for Fajr, Dhuhr, Asr, Maghrib, and Isha prayers.</p>
+    </div>
+    <div class="step" data-step="6">
+      <p>Optional: Settings & Customization: The user might have options to:</p>
+      <ul>
+        <li>View prayer times for different calculation methods (if available).</li>
+        <li>Set notifications for upcoming prayer times.</li>
+      </ul>
+    </div>
+    <div class="step" data-step="7">
+      <p>End</p>
+    </div>
+  </div>
 </body>
-
 </html>
